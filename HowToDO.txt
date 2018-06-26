@@ -1,0 +1,16 @@
+ionic start ionic3-barcode blank
+cd ionic3-barcode
+
+ionic cordova plugin add phonegap-plugin-barcodescanner
+npm install --save @ionic-native/barcode-scanner
+ionic cordova plugin add cordova-plugin-x-toast
+npm install --save @ionic-native/toast
+
+ionic cordova platform rm android
+ionic cordova platform add android
+ionic cordova platform rm ios
+
+ionic cordova run android
+
+https://www.djamware.com/post/59bb219f80aca768e4d2b13e/example-of-ionic-3-angular-4-cordova-barcode-and-qr-code-scanner
+
